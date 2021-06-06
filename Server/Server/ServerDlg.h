@@ -42,4 +42,5 @@ public:
 	CListBox m_ListBox;
 	afx_msg void OnClickedStart();
 	bool CreateSocketInformation(SOCKET s, char* Str, CListBox* pLB);
+	afx_msg void OnBnClickedCancel();
 };

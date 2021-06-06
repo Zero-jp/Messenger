@@ -68,6 +68,7 @@ BEGIN_MESSAGE_MAP(CServerDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_START, &CServerDlg::OnClickedStart)
+	ON_BN_CLICKED(IDC_CANCEL, &CServerDlg::OnBnClickedCancel)
 END_MESSAGE_MAP()
 
 
@@ -443,3 +444,10 @@ void FreeSocketInformation(DWORD Event, char* Str, CListBox* pLB)
 	EventTotal--;
 }
 
+
+
+void CServerDlg::OnBnClickedCancel()
+{
+	// TODO: добавьте свой код обработчика уведомлений
+	CDialogEx::OnCancel();
+}
